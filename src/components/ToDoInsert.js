@@ -15,7 +15,8 @@ const ToDoInput = styled.input`
   color:rgb(82, 86, 98);
 
   &:focus{
-    outline-color:rgb(102, 149, 243);
+    outline-color: rgb(102, 149, 243);
+    color: rgb(48,48,48);
   }
 `;
 
@@ -24,7 +25,7 @@ const ToDoInsertBtn = styled.input`
   width: 50px;
   height: 43px;
   font-size: 20px;
-  color:#2269f6;
+  color: #2269f6;
   border: 2px solid rgb(157, 177, 202);
   border-radius: 5px;
   background-color: rgba(152, 197, 248, 0.894);
@@ -35,7 +36,7 @@ const ToDoInsertBtn = styled.input`
   }
 `;
 
-function ToDoInsert({inputTodo,handleOnchange,addTodo,submitTodo}) {
+function ToDoInsert({ inputTodo, handleOnchange, addTodo, submitTodo }) {
 
   return (
     <ToDoInsertBox onSubmit={submitTodo}>

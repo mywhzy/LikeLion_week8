@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 const ToDoTitleBox = styled.div`
-  height: 10%;
-  width: 100%;
   text-align: center;
   border-bottom: 2px solid rgb(149, 178, 247);
   color: rgb(83, 157, 247);
 `;
 
 const ToDoTitleText = styled.h3`
+  margin: 0;
+  padding: 10px;
   font-size: 35px;
   font-style: italic;
 

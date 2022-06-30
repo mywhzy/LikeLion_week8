@@ -13,7 +13,6 @@ const ToDoBox = styled.div`
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(192, 221, 251);
-  overflow: auto; //-ToDoList부분으로 이동시키기
   box-shadow: 1px 1px 3px 1px #6293f3;
 `;
 
@@ -21,7 +20,7 @@ function ToDo() {
   const [todos, setTodos] = useRecoilState(toDos);
   const [index, setIndex] = useState(0);
   const [inputTodo, setInputTodo] = useState("");
-  const counts = useRecoilValue(toDoCounter);
+  const toDoCount = useRecoilValue(toDoCounter);
   const resetTodos = useResetRecoilState(toDos);
 
   function addToDoList() {
@@ -69,7 +68,7 @@ function ToDo() {
       />
       <ToDoList
         todos={todos}
-        counts={counts}
+        toDoCounts={toDoCount}
         resetTodos={resetTodos}
         checkedTodo={isChecked}
         deleteTodo={deleteToDoList}

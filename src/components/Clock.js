@@ -8,8 +8,8 @@ const ClockBox = styled.div`
 
 const DateText = styled.h3`
   color: rgb(99, 146, 253);
-  text-shadow: 1px 1px 0px rgba(255, 253, 253, 0.913),
-    1.5px 1.5px 0px rgba(102, 147, 252, 0.759);
+  text-shadow: 1px 1px 0 rgba(255, 253, 253, 0.913),
+    1.5px 1.5px 0 rgba(102, 147, 252, 0.759);
 
   &:hover {
     color: rgb(77, 128, 247);
@@ -20,8 +20,8 @@ const DateText = styled.h3`
 const TimeText = styled.h3`
   color: rgb(99, 146, 253);
   margin-top: 0;
-  text-shadow: 1px 1px 0px rgba(255, 253, 253, 0.913),
-    1.5px 1.5px 0px rgba(102, 147, 252, 0.759);
+  text-shadow: 1px 1px 0 rgba(255, 253, 253, 0.913),
+    1.5px 1.5px 0 rgba(102, 147, 252, 0.759);
   &:hover {
     color: rgb(77, 128, 247);
     font-style: italic;

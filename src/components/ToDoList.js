@@ -9,7 +9,7 @@ const ToDoListTopBox = styled.div`
 
 const ToDoListCounter = styled.b`
   margin-left: 10px;
-  color:rgb(83, 134, 253);
+  color: rgb(83, 134, 253);
   font-size: 20px;
   border-radius: 5px;
   margin-top: 2px;
@@ -22,16 +22,27 @@ const ToDoListRestBtn = styled.input`
   border-radius: 5px;
   border: 2px solid rgb(99, 163, 246);
   color:rgb(93, 97, 101);
-  height: 27px;`;
+  height: 27px;
+  cursor: pointer;
+  
+  &:hover{
+    color:#f43333;
+  }
 
-const ToDoListSet = styled.ul``;
+  `;
 
-function ToDoList({todos,counts,resetTodos,checkedTodo,deleteTodo}) {
+const ToDoListSet = styled.ul`
+  margin: 0;
+  height:77%;
+  overflow: auto;
+`;
+
+function ToDoList({ todos, toDoCounts, resetTodos, checkedTodo, deleteTodo }) {
 
   return (
     <>
     <ToDoListTopBox>
-      <ToDoListCounter>To Do: {counts}</ToDoListCounter>
+      <ToDoListCounter>To Do: {toDoCounts}</ToDoListCounter>
       <ToDoListRestBtn type ="button" value="List Reset" onClick={resetTodos}/>
     </ToDoListTopBox>
     <ToDoListSet>{todos.map(todo=><ToDoListItem key={todo.id} id={todo.id} content={todo.content} done={todo.done} checkedTodo={checkedTodo} deleteTodo={deleteTodo} />)}</ToDoListSet>

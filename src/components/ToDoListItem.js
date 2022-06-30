@@ -21,24 +21,25 @@ const ListItem = styled.li`
       text-decoration:line-through;
       color:rgb(144, 187, 247);
       font-weight: bold;
-      height: 35px;
       `}
 `;
 
 const ListItemDeleteBtn = styled.input`
-  background-color: rgb(199, 220, 241);
-  border: 2px solid rgb(134, 175, 251);
+  float: right;
+  background-color: rgb(192, 221, 251);
+  border:none;
   color:rgb(42, 70, 249);
   border-radius: 5px;
-  margin-left: 10px;
-  height: 27px;
-  width: 28px;
+  height: 30px;
   font-weight: 600;
-  text-align: center;
   cursor: pointer;
   
+  &:hover{
+    color: #ff2f2f;
+  }
+
   &:active{
-    border:1px solid rgb(102, 149, 243);
+    color:rgb(42, 70, 249);
   }
 `;
 
